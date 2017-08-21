@@ -82,18 +82,18 @@ then
     if test $check -eq "0"
     then
         # 通知する
-        mail -s "サーバ設定に失敗しました $host のhttpdが停止しています" info@example.com
+        mail -s "バーチャルホスト設定に失敗しました $host のhttpdが停止しています" info@example.com
 
         echo "httpd は停止しています"
     else
         # 通知する
-        mail -s "サーバ設定に失敗しました $host のhttpdが稼働しています" info@example.com
+        mail -s "バーチャルホスト設定に失敗しました $host のhttpdが稼働しています" info@example.com
 
         echo "httpd は正常稼働しています"
     fi
 
 else
-    mail -s "$host のサーバ設定が正常に完了しました。" info@example.com
+    mail -s "$host のバーチャルホスト設定が正常に完了しました。" info@example.com
 
     echo "httpd は正常稼働しています"
 fi
